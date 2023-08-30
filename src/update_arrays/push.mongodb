@@ -1,0 +1,6 @@
+use("cantante");
+db.inventory.updateOne({_id:5},{
+  $push:{
+    tags:"headphone"
+  }
+})

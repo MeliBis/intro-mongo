@@ -1,0 +1,25 @@
+use("cantante");
+
+/* db.iot.insert({
+  sensor:"A001",
+  date: "2023-01-03",
+  reading:[123123]
+}) */
+//actualizar un registro
+ db.iot.updateOne({
+  sensor:"A001",
+  date: "2023-01-03",
+},{
+  $push:{
+    reading:34575
+  }
+})
+//eliminar un registro
+/* db.iot.updateOne({
+  sensor:"A001",
+  date: "2023-01-03",
+},{
+  $pop:{
+    readings:1
+  }
+}) */

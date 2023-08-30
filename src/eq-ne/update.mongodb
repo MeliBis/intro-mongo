@@ -1,0 +1,11 @@
+use("cantante");
+
+db.inventory.updateMany(
+  //utilizamos query - operators
+  { qty:{ $ne:20}},
+  //update - operators
+  {
+    $inc:{
+      qty:10
+    }
+  })

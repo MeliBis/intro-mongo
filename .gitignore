@@ -177,5 +177,5 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
-
+mongodb/
 # End of https://www.toptal.com/developers/gitignore/api/node,macos,direnv

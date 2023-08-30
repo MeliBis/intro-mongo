@@ -1,0 +1,2 @@
+use("cantante");
+db.inventory.find()
