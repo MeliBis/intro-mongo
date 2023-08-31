@@ -96,6 +96,7 @@ db.inventory.insertMany([
 ])
 
 db.inventory.find()
+
 Arrays Opertators
 use("platzi_store")
 
@@ -146,6 +147,7 @@ db.survey.insertMany([
 ]);
 
 db.survey.find();
+
 Expresive operator
 use("platzi_store")
 
@@ -160,6 +162,7 @@ db.monthlyBudget.insertMany([
 ])
 
 db.monthlyBudget.find()
+
 Sort & Limit
 use("platzi_store")
 

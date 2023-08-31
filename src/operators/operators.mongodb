@@ -1,0 +1,18 @@
+use("cantante");
+
+
+//using $gt (>) & $gte(>=)
+//db.inventory.find({qty: {$gt:20} })
+//db.inventory.find({ qty: { $gte:20}})
+
+
+//using $li (<) & $lte (<0)
+//db.inventory.find({ qty: { $li:20}})
+//db.inventory.find({qty:{ $lte:25}})
+
+//db.inventory.find({qty: {$gte:25, $lte:35}})
+
+db.inventory.find({
+  "item.code":"123",
+  qty: { $gte:20, $lte:25}
+})

@@ -1,0 +1,16 @@
+use("cantante")
+
+//db.inventory.find({"item.description":"Single line description."})
+
+//db.inventory.find({"item.description": {$regex:/line/}})
+//db.inventory.find({"item.description": {$regex:/LINE/i}})
+
+//texto que termine en el valor ingresado
+//db.inventory.find({"item.description": {$regex:/line$/i}})
+
+//primera posicion de palabra
+//db.inventory.find({"item.description": {$regex:/^single/i}})
+
+//salto de linea
+db.inventory.find({"item.description": {$regex:/^s/im}})
+
