@@ -1,0 +1,15 @@
+use("sample_training")
+
+//db.zips.find()
+//forma ascendente
+db.zips
+.find({pop: {$gte:100}})
+.sort({ pop:1})
+.limit(2)
+
+//descendente
+/* db.zips
+.find({pop: {$gte:100}})
+.sort({ pop:-1}) */
+
+//paginacion

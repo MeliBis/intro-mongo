@@ -1,0 +1,14 @@
+use("cantante")
+
+//db.monthlyBudget.find({spent : {$gte:100}})
+/* db.monthlyBudget.find({
+  $expr:{
+    $gte:["$spent",200]
+  }
+}) */
+//sprent mayor a budget
+db.monthlyBudget.find({
+  $expr:{
+    $gte:["$spent","$budget"]
+  }
+})

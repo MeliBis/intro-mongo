@@ -1,0 +1,6 @@
+use("cantante")
+//paginacion
+db.categories
+  .find()
+  .skip(3)
+  .limit(2)
