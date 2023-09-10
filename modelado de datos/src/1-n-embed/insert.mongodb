@@ -1,0 +1,18 @@
+use("cantante")
+
+db.orders.insertOne({
+  userId:ObjectId('ST001'), //colocar id de usuario
+  date:'2023-12-12',
+  item:[
+    {
+      name:'camiseta',
+      price:120,
+      qty:1
+    },
+    {
+      name:'pantalon',
+      price:230,
+      qty:2
+    }
+  ]
+})

@@ -1,0 +1,3 @@
+use("cantante")
+
+db.products.find()

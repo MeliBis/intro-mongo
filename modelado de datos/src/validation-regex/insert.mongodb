@@ -1,0 +1,7 @@
+use("cantante")
+
+db.users.insertOne({
+  email:"melib@gmail.com",
+  password: 'melib',
+  role:'admin'
+})

@@ -1,0 +1,15 @@
+use("cantante")
+
+db.store.insertOne({
+  storeId:'ST001',
+  name:'kamtali store',
+  address:'cr 234'
+})
+db.store_details.insertOne({
+  storeId:'ST001',
+  description:'texto texto texto ',
+  manager:{
+    email:'melissa@gmail.com',
+    cellphone: '124753922'
+  }
+})

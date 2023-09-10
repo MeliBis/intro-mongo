@@ -1,0 +1,8 @@
+use("cantante")
+
+db.getCollectionInfos()
+
+//actualizar solo un elemento del schema
+db.runCommand({
+  collMod: 'users'
+})

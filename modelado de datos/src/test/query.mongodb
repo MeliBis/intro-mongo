@@ -1,0 +1,4 @@
+use("cantante")
+
+
+db.users.find()

@@ -1,0 +1,8 @@
+use("cantante")
+
+db.users.insertOne({
+  email:"melib@gmail.com",
+  password: 'catabarrios',
+  role:'admin',
+  social_accounts:['instagram', 'facebook']
+})

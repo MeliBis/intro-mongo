@@ -1,0 +1,6 @@
+use("cantante")
+
+db.products.insertOne({
+  name: "Melissa",
+  sizes:['L','M']
+})
